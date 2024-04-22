@@ -16,19 +16,19 @@ function Input() {
     }
     return(
         <>
-          <section className="container">
+          <div className="container">
                 <form>
                     <input type="text" value={inputValue} onChange={handleChangeInInput}/>   
                     <button type="button" onClick={addTasks}>Add</button>
                 </form>
 
-                <ul>
+                <ul className="list">
                     {tasks.map((task,index)  => (
                         <li className="list-items" key={index}>{task}</li>
                     )
                     )}
                 </ul>
-          </section>
+          </div>
         </>
     )
 
